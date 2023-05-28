@@ -11,7 +11,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');">
+  <script type="text/javascript">
+    var back_redirect_back_link = 'https://eltonicoafricano.site/tonique-tsl/'+ location.search;
+    // NÃ£o altere daqui para baixo
+    history.pushState({}, "", location.href);
+    history.pushState({}, "", location.href);
 
+    window.addEventListener('popstate', function (event) {
+        if (event.state) {
+            setTimeout(function () {
+             
+                location.href = back_redirect_back_link;
+            }, 1);
+        }
+    }, false);
+</script>
   <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
